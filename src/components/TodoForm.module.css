@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  border-bottom: 2px solid var(--color-ink);
+}
+
+.form:focus-within {
+  border-bottom-color: var(--color-pencil);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-2) 0;
+  border: 0;
+  background: none;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--color-ink-muted);
+  opacity: 1;
+}
+
+.submit {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.submit:hover:not(:disabled) {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.submit:disabled {
+  color: var(--color-ink-muted);
+  cursor: not-allowed;
+}

@@ -1,0 +1,19 @@
+.filters {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.filter {
+  color: var(--color-ink-muted);
+}
+
+.filter:hover,
+.filter[aria-pressed='true'] {
+  color: var(--color-ink);
+}
+
+.filter[aria-pressed='true'] {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.label {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: var(--space-3);
+  min-width: 0;
+  cursor: pointer;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
+.title {
+  overflow-wrap: anywhere;
+}
+
+.checkbox:checked + .title {
+  color: var(--color-ink-muted);
+  text-decoration: line-through 2px var(--color-pencil);
+}
+
+.remove {
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.remove:hover {
+  color: var(--color-pencil);
+}

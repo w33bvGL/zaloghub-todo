@@ -1,0 +1,42 @@
+.app {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-4) var(--space-12);
+}
+
+.heading {
+  margin-bottom: var(--space-6);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-4);
+  margin: var(--space-8) 0 var(--space-1);
+  font-size: var(--text-sm);
+}
+
+.counter {
+  color: var(--color-ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.empty {
+  margin-block: var(--space-6);
+  color: var(--color-ink-muted);
+}
+
+.clear {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.clear:hover {
+  color: var(--color-pencil);
+}

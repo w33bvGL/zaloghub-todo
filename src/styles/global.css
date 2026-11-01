@@ -1,0 +1,50 @@
+:root {
+  --color-paper: #f7f3ea;
+  --color-ink: #1f2a44;
+  --color-ink-muted: #5c6170;
+  --color-rule: #ddd5c3;
+  --color-pencil: #b83a26;
+
+  --font-text: 'Literata', Georgia, serif;
+  --text-sm: 0.875rem;
+  --text-md: 1.125rem;
+  --text-lg: 2rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  color-scheme: light;
+  font: 400 var(--text-md) / 1.55 var(--font-text);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  caret-color: var(--color-pencil);
+  accent-color: var(--color-ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #1c1e23;
+    --color-ink: #e9e5db;
+    --color-ink-muted: #a09d96;
+    --color-rule: #33363e;
+    --color-pencil: #e8735e;
+
+    color-scheme: dark;
+  }
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-pencil) 25%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-pencil);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
